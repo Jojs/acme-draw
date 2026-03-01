@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Acme.Draw.Core/Acme.Draw.Core.csproj" />
+  <Project Path="Acme.Draw.Tests/Acme.Draw.Tests.csproj" />
+  <Project Path="Acme.Draw.Web/Acme.Draw.Web.csproj" />
+</Solution>
