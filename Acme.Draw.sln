@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Draw.Core", "Acme.Draw.Core\Acme.Draw.Core.csproj", "{3CEB8F09-77AF-4583-9FD3-54D1E73BB1D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Draw.Web", "Acme.Draw.Web\Acme.Draw.Web.csproj", "{92EE46C7-2C40-400C-AB3A-54FAA773073F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Draw.Tests", "Acme.Draw.Tests\Acme.Draw.Tests.csproj", "{8DDE170E-1AAE-4F56-B2BF-960012C4B5F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CEB8F09-77AF-4583-9FD3-54D1E73BB1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CEB8F09-77AF-4583-9FD3-54D1E73BB1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CEB8F09-77AF-4583-9FD3-54D1E73BB1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CEB8F09-77AF-4583-9FD3-54D1E73BB1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92EE46C7-2C40-400C-AB3A-54FAA773073F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EE46C7-2C40-400C-AB3A-54FAA773073F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EE46C7-2C40-400C-AB3A-54FAA773073F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EE46C7-2C40-400C-AB3A-54FAA773073F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDE170E-1AAE-4F56-B2BF-960012C4B5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDE170E-1AAE-4F56-B2BF-960012C4B5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDE170E-1AAE-4F56-B2BF-960012C4B5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDE170E-1AAE-4F56-B2BF-960012C4B5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
