@@ -1,52 +1,55 @@
 ﻿@page
 @model Acme.Draw.Web.Pages.IndexModel
 
-<h1>Competition entry</h1>
-<div asp-validation-summary="All"></div>
+<div class="container mt-4">
 
-@if (Model.SuccessMessage is not null)
-{
-    <p style="color: green">@Model.SuccessMessage</p>
-}
+    <h1 class="mb-4">Competition entry</h1>
+    <div asp-validation-summary="All"></div>
 
-@if (Model.ErrorMessage is not null)
-{
-    <p style="color: red">@Model.ErrorMessage</p>
-}
+    @if (Model.SuccessMessage is not null)
+    {
+        <p style="color: green">@Model.SuccessMessage</p>
+    }
 
-<form method="post">
-    <div>
-        <label asp-for="Input.FirstName"></label>
-        <input asp-for="Input.FirstName" />
-        <span asp-validation-for="Input.FirstName"></span>
-    </div>
+    @if (Model.ErrorMessage is not null)
+    {
+        <p style="color: red">@Model.ErrorMessage</p>
+    }
 
-    <div>
-        <label asp-for="Input.LastName"></label>
-        <input asp-for="Input.LastName" />
-        <span asp-validation-for="Input.LastName"></span>
-    </div>
+    <form method="post">
+        <div>
+            <label asp-for="Input.FirstName"></label>
+            <input asp-for="Input.FirstName" />
+            <span asp-validation-for="Input.FirstName"></span>
+        </div>
 
-    <div>
-        <label asp-for="Input.Email"></label>
-        <input asp-for="Input.Email" type="email" />
-        <span asp-validation-for="Input.Email"></span>
-    </div>
+        <div>
+            <label asp-for="Input.LastName"></label>
+            <input asp-for="Input.LastName" />
+            <span asp-validation-for="Input.LastName"></span>
+        </div>
 
-    <div>
-        <label asp-for="Input.DateOfBirth"></label>
-        <input asp-for="Input.DateOfBirth" type="date" />
-        <span asp-validation-for="Input.DateOfBirth"></span>
-    </div>
+        <div>
+            <label asp-for="Input.Email"></label>
+            <input asp-for="Input.Email" type="email" />
+            <span asp-validation-for="Input.Email"></span>
+        </div>
 
-    <div>
-        <label asp-for="Input.SerialNumber"></label>
-        <input asp-for="Input.SerialNumber" autocapitalize="characters" />
-        <span asp-validation-for="Input.SerialNumber"></span>
-    </div>
+        <div>
+            <label asp-for="Input.DateOfBirth"></label>
+            <input asp-for="Input.DateOfBirth" type="date" />
+            <span asp-validation-for="Input.DateOfBirth"></span>
+        </div>
 
-    <button type="submit">Submit</button>
-</form>
+        <div>
+            <label asp-for="Input.SerialNumber"></label>
+            <input asp-for="Input.SerialNumber" autocapitalize="characters" />
+            <span asp-validation-for="Input.SerialNumber"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
