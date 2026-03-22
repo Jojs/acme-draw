@@ -6,6 +6,11 @@ The implementation focuses on a simple, testable domain model and a clean separa
 
 ---
 
+## Context
+Technical assignment completed in March 2026 to demonstrate rapid technological onboarding in an unfamiliar stack (.NET 8). Completed in collaboration with AI for code reviews and architectural trade-off discussions.
+
+---
+
 ## Technology
 
 * .NET 8
