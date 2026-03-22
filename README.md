@@ -7,7 +7,20 @@ The implementation focuses on a simple, testable domain model and a clean separa
 ---
 
 ## Context
-Technical assignment completed in March 2026 to demonstrate rapid technological onboarding in an unfamiliar stack (.NET 8). Completed in collaboration with AI for code reviews and architectural trade-off discussions.
+
+This project was developed in March 2026 as part of a technical assignment, with the goal of demonstrating rapid onboarding in an unfamiliar stack (.NET 8).
+
+The focus was on building a simple but well-structured solution, with clear separation of concerns, testable business logic, and explicit trade-offs between simplicity and robustness.
+
+AI was used as a supporting tool for code reviews, architectural discussions, and exploring framework-specific patterns — not as a substitute for understanding, but as a way to accelerate learning and validate decisions.
+
+The solution prioritises clarity and correctness over completeness, reflecting an MVP approach.
+
+## Selected implementation choices
+
+- Razor Pages chosen over API-first approach to keep the solution simple and focused on the assignment scope.
+- Application-level validation used to keep business rules testable and framework-independent.
+- Direct DbContext usage in the read-side (Entries page) was chosen for simplicity, while acknowledging that a repository abstraction could improve consistency.
 
 ---
 
@@ -109,7 +122,7 @@ The service enforces the following rules:
 * Email must be valid
 * User must be **18 years or older**
 * Serial number must exist
-* A serial number can be used **a maximum of two times**
+* A serial number can be used **at most twice**
 
 These rules are implemented in `DrawEntryService`.
 
